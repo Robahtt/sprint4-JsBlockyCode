@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hard Level - JS Blocky Code</title>
+
+  <!-- Link to main CSS -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body data-level="level3">
+  <!-- Header Title -->
+  <header>
+    <h1>🔥 Hard Challenge: Loop Through an Array</h1>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="challenge-container">
+    <!-- Instruction -->
+    <p class="challenge-instruction">
+      Drag the correct blocks to create a for loop that prints each item in an array.
+    </p>
+
+    
+    <!-- Ajax hint button -->
+    <button id="show-hint-btn">💡 Show Hint</button>
+    <div id="hint-box"></div>
+
+
+    <!-- Drop Area for Code Blocks -->
+    <div id="drop-zone">
+      <!-- Four drop slots for ordered steps -->
+      <div class="drop-container">
+        <span class="drop-label">Step 1</span>
+        <div class="drop-slot" data-slot="1"></div>
+      </div>
+      <div class="drop-container">
+        <span class="drop-label">Step 2</span>
+        <div class="drop-slot" data-slot="2"></div>
+      </div>
+      <div class="drop-container">
+        <span class="drop-label">Step 3</span>
+        <div class="drop-slot" data-slot="3"></div>
+      </div>
+      <div class="drop-container">
+        <span class="drop-label">Step 4</span>
+        <div class="drop-slot" data-slot="4"></div>
+      </div>
+    </div>
+
+    <!-- Code Block Options for Dragging -->
+    <div id="code-blocks">
+      <div class="code-draggable" data-code="let arr = ['a', 'b', 'c'];">let arr = ['a', 'b', 'c'];</div>
+      <div class="code-draggable" data-code="for(let i = 0; i < arr.length; i++) {">for(let i = 0; i < arr.length; i++) {</div>
+      <div class="code-draggable" data-code="console.log(arr[i]);">console.log(arr[i]);</div>
+      <div class="code-draggable" data-code="}">}</div>
+      <div class="code-draggable" data-code="arr.forEach(item => console.log(item));">arr.forEach(item => console.log(item));</div>
+    </div>
+
+    <!-- Button to check user input -->
+    <button id="check-btn">Check</button>
+
+    <!-- Area for optional feedback message -->
+    <p id="feedback"></p>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <a href="../levels.html" class="quit">⬅ Quit to Level Menu</a>
+      <a href="congrats.html" id="finish-btn" style="display:none;">Finish and See Your Results</a>
+
+      <!-- Dialog: Success -->
+      <div id="levelCompleteDialog" title="Level Complete!" style="display:none;">
+        <p>Well Done</p>
+      </div>
+    </div>
+
+    <!-- Dialog: Failure -->
+    <div id="tryAgainDialog" title="Oops!">
+      <p>❌ Try again! Please check your code blocks.</p>
+    </div>
+  </main>
+
+  <!-- JavaScript Libraries & Logic -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Blocky Code - Levels</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Particle Background Effect -->
+  <div id="particles-js"></div>
+
+  <!-- Website Header with Logo and Navigation -->
+  <header>
+    <div class="logo">
+      <img src="assets/images/Js2.png" alt="JS Blocky Code Logo">
+      <span>JS Blocky Code</span>
+    </div>
+    <nav>
+      <ul>
+        <!-- Navigation Links -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="levels.html" class="active">Levels</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction Text for the Levels Page -->
+  <section class="text">
+    <div class="text-content">
+      <h1>Are you ready for the JavaScript Adventure!</h1>
+      <h2><span id="levelMessage"></span></h2>
+      <p>
+        Start with Easy Mode, level up to Medium, and test your skills in Hard Mode. 
+        Can you complete them all?
+      </p>
+    </div>
+  </section>
+
+  <!-- Levels Section: Easy, Medium, Hard -->
+  <section class="levels">
+    <!-- Easy Level (always unlocked) -->
+    <div class="levels-card">
+      <h2>EASY</h2>
+      <p>
+        Learn the basics of JavaScript, including variables, functions, and loops,
+        through simple drag-and-drop exercises.
+      </p>
+      <button class="btn-glow" onclick="location.href='levels/easy-level.html'">START</button>
+    </div>
+
+    <!-- Medium Level (locked until Easy completed) -->
+    <div class="levels-card locked">
+      <h2>MEDIUM</h2>
+      <p>
+        Work on slightly complex JavaScript concepts like conditionals,
+        DOM manipulation, and event handling.
+      </p>
+      <button disabled>🔒 START</button>
+      <p class="locked-text">SHOULD FINISH EASY LEVEL FIRST</p>
+    </div>
+
+    <!-- Hard Level (locked until Medium completed) -->
+    <div class="levels-card locked">
+      <h2>HARD</h2>
+      <p>
+        Test your JavaScript skills with advanced coding puzzles involving
+        algorithms, API calls, and complex logic.
+      </p>
+      <button disabled>🔒 START</button>
+      <p class="locked-text">SHOULD FINISH MEDIUM LEVEL FIRST</p>
+    </div>
+  </section>
+  
+  <!-- Footer Section with Social Icons -->
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com" target="_blank">
+        <img src="assets/images/github.png" alt="GitHub">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="assets/images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="assets/images/linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+    <p>&copy; 2025 JS Blocky Code. All rights reserved.</p>
+  </footer>
+
+  <!-- jQuery + UI + Custom Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="script.js" defer></script>
+
+</body>
+</html>

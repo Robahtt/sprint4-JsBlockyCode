@@ -1,0 +1,7 @@
+{
+    "level1": "Use 'let' to declare a variable and 'console.log(name)' to print it.",
+    "level2": "Use 'let' to declare a number. If it's greater than 0, print 'Positive' with console.log().",
+    "level3": "Use a for-loop to go through each index of the array, then print the item using console.log()."
+
+}
+  

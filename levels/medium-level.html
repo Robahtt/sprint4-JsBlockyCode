@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medium Level - JS Blocky Code</title>
+
+  <!-- Link to Shared Stylesheet -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body data-level="level2">
+  <!-- Page Header -->
+  <header>
+    <h1>🌶️ Medium Challenge: Write a Conditional Statement</h1>
+  </header>
+
+  <!-- Main Challenge Container -->
+  <main class="challenge-container">
+    <!-- User Instructions -->
+    <p class="challenge-instruction">
+      Drag the correct blocks to check if a number is positive using an if statement.
+    </p>
+
+    <!-- Ajax hint button -->
+    <button id="show-hint-btn">💡 Show Hint</button>
+    <div id="hint-box"></div>
+
+    <!-- Code Drop Zones -->
+    <div id="drop-zone">
+      <!-- Three steps for arranging code blocks -->
+      <div class="drop-container">
+        <span class="drop-label">Step 1</span>
+        <div class="drop-slot" data-slot="1"></div>
+      </div>
+      <div class="drop-container">
+        <span class="drop-label">Step 2</span>
+        <div class="drop-slot" data-slot="2"></div>
+      </div>
+      <div class="drop-container">
+        <span class="drop-label">Step 3</span>
+        <div class="drop-slot" data-slot="3"></div>
+      </div>
+    </div>
+
+    <!-- Code Block Options -->
+    <div id="code-blocks">
+      <div class="code-draggable" data-code="let num = 10;">let num = 10;</div>
+      <div class="code-draggable" data-code="if(num > 0) {">if(num > 0) {</div>
+      <div class="code-draggable" data-code="console.log('Positive');}">console.log('Positive');}</div> 
+      <div class="code-draggable" data-code="num > 0">num > 0</div>
+    </div>
+    
+
+    <!-- Button to Trigger Answer Check -->
+    <button id="check-btn">Check</button>
+
+    <!-- Feedback Message (optional use) -->
+    <p id="feedback"></p>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <a href="../levels.html" class="quit">⬅ Quit to Level Menu</a>
+      <a href="hard-level.html" id="next-btn" style="display:none;">Next Level</a>
+
+      <!-- Success Dialog Box -->
+      <div id="levelCompleteDialog" title="Level Complete!" style="display:none;">
+        <p>Great job! You've solved this challenge successfully. Ready for the next one?</p>
+      </div>
+    </div>
+
+    <!-- Try Again Dialog Box -->
+    <div id="tryAgainDialog" title="Oops!">
+      <p>❌ Try again! Please check your code blocks.</p>
+    </div>
+  </main>
+
+  <!-- JS Libraries and Main Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>
